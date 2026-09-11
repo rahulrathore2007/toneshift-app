@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-GROQ_MODEL = "llama-3.1-8b-instant"
+GROQ_MODEL = "openai/gpt-oss-20b"
 
 # Minimum acceptable semantic similarity (0-1) between the original text
 # and the back-translated rewrite before we flag "meaning drift".
